@@ -1,0 +1,52 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Home Page</title>
+   <link rel="stylesheet" type="text/css" href="../css/stylehp.css">
+    <link rel="stylesheet" href="animate.min.css">
+  </head>
+  <body>
+   <nav class=" zone sticky">
+      <ul class="mainnav">
+    	<li><a href="projecthp.html">Home</a></li>
+    	<li><a href="team.html">Team</a></li>
+    	<li><a href="about.html">About us</a></li>
+    	<li class="push"><a href="login.html">Logout</a></li>
+      </ul>
+    </nav>
+    
+    <div class="w3-content w3-display-container zone">
+       <img class="mySlides coverpic" src="../img/is1.jpg" >
+       <img class="mySlides coverpic" src="../img/is2.jpg" >
+       <img class="mySlides coverpic" src="../img/is3.jpg" >
+       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <div class="grid zone">
+
+ <div class="imagecontainer" onclick="go('quiz')">
+  <img class="image" src="../img/quiz2.jpg">
+  <div class="overlay"> Get Sorted </div>
+    </div>
+
+    <div class="imagecontainer" onclick="go('houses')">
+    <img class="image" src="../img/houses.jpg">
+     <div class="overlay"> Houses </div>
+    </div>
+
+    <div class="imagecontainer" onclick="go('charms')">
+    <img class="image" src="../img/charms.jpg">
+     <div class="overlay"> Charms </div>
+    </div>
+
+
+
+
+    <div class="imagecontainer" onclick="go('characters')">
+    <img class="image" src="../img/characters.jpg">
+     <div class="overlay"> Characters </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="../js/imageslider.js"></script>   <!-- Image slider script -->
+  </body>
+  </html>

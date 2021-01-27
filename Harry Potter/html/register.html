@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function checkForm(){
+   alert("The form was submitted");
+}
+	</script>
+	<title>Registeration Page</title>
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- THATS HOW YOU COMMENT CTRL+/ -->
+	<!-- <div> <form></form> divisions 3lshan el css && <span> zyha bas for 1 line -->
+		<center><h1>Welcome to your Registeration Page<br></h1>
+	<div id="div1">
+	<form  onsubmit="checkForm()">
+		
+		First Name:&nbsp;<input type="text" name="firstname" pattern="[a-zA-Z]+" placeholder="Name" required ><br>
+		Nickname:&nbsp;&nbsp;<input type="text" name="Nickname" required placeholder="AsFantasyName" pattern="[a-zA-Z]+"><br>
+		Email:&ensp;&ensp;&ensp;&nbsp;&ensp;<input type="email" name="email" required placeholder="***@company.com" ><br>
+		Password:&nbsp;&nbsp;<input type="password" name="password" minlength="6" required placeholder="******"><br>
+		Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="Age" required min="10" max="80" placeholder="10->80">&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<br>
+		Gender:&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+			<div class="momo" ><input type="radio" name="gender" value="Male">Male<br></div>
+			<div class="paaa"><input type="radio" name="gender" value="Female">Female<br></div>
+		Country:&nbsp;&nbsp;&emsp;&nbsp;&nbsp;
+		<select name="country">
+			<option value="Egypt"> Egypt</option>
+			<option value="America"> America</option>
+			<option value="Canada"> Canada</option>
+			<option value="England"> England</option>
+		</select>&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		Pets:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		<div class="maaa">
+		<input type="checkbox" name="OWL">Owl
+		<input type="checkbox" name="RAT">Rat
+		<input type="checkbox" name="CAT">Cat</div>
+	
+		House:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<select name="House">
+			<option value="Gryffindor"> Gryffindor</option>
+			<option value="Ravenclaw"> Ravenclaw</option>
+			<option value="Slytherin"> Slytherin</option>
+			<option value="Hufflepuff"> Hufflepuff</option>
+			<option value="IDKyet"> Idk yet</option>
+		</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		<input align = "right" class="search" type="reset" value="Reset" >
+		<input align = "right" class="search" type="submit" value="Register" id="register" >
+		
+	</div> <br> 
+	</form></center>
+	<center><div class="finale"> <font><a href="login.html" style="color:yellow">Login</a></font></center></div>
+</body>
+</html>

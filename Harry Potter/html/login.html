@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+	<center><h1>Welcome to your Login Page<br></h1>
+		<div id="div1">
+			Username:&ensp;<input type="email" name="email" id="username" required><br>
+			Password:&ensp;&nbsp;<input type="password" name="password" id="password"><br>
+			<input class="search" type="submit" value="Login" onclick="isUserValid(getElementById('username').value,getElementById('password').value);signIn(getElementById('username').value,getElementById('password').value)">
+			<input class="search" type="submit" value="Register" onclick="register();">
+		</div>
+	</center>
+<script type="text/javascript">
+
+				var database = [
+				{
+					username: "andrew",
+					password: "123456"
+				},
+				{
+					username: "amr",
+					password: "amooor"
+				},
+				{
+					username: "mostafa",
+					password: "tifaaa"
+				},
+				{
+					username: "mariam",
+					password: "101010"
+				},
+				{
+					username: "ADMIN",
+					password: "ADMIN"
+				},
+
+				];
+			
+				function register(){
+					window.location.href = "register.html";
+				}
+				function isUserValid(username,password) {
+						for (var i = 0 ; i < database.length; i++) {
+							if(database[i].username  && database[i].password === password) {
+								return true;
+							}
+						}
+					return false;
+				}
+
+				function signIn(username,password){
+					if (username==="ADMIN" && password==="ADMIN" && isUserValid(username,password)){
+						window.location.href = "admin.html";
+					}
+
+					else if (isUserValid(username,password)){
+				window.location.href = "projecthp.html"; // elmafrod tb2a main page
+			} else {
+				alert("Wrong Data!!");
+			}
+		}
+
+
+
+	</script>
+</body>
+</html>

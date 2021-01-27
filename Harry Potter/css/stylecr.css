@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Magicschool1';
+    src: URL('Letters for Learners.ttf') format('truetype');
+  }
+
+body{
+    margin: auto;
+    background-image: URL("../img/Register.png");
+}
+
+.container{
+    display: grid;
+    grid-gap: 10px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(380px,1fr));
+
+}
+.flip-card {
+    border: 5px solid rgba(0,0,0,0.3);
+    cursor: pointer;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgba(50,39,33,0.2);
+    color: white;
+    font-family: 'Magicschool1';
+    transform: rotateY(180deg);
+  }
+  /*----------------------------------------------------------------------------*/
+  nav{
+    background-color: rgba(50,39,33,0.2);
+}
+ul{
+    margin:5px;
+    display: flex;
+    list-style: none;
+    font-size: 0.8em;
+    font-family: 'Magicschool1';
+    
+}
+li{
+    margin: 0px;
+    top: 0;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.push{
+    margin-left: auto;
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+footer{
+    margin-top: auto;
+    text-align: center;
+    background-color: rgba(50,39,33,0.6);
+}
+.zone {
+    /*padding:30px 50px;
+    margin:40px 60px;
+    display:inline-block;*/
+    cursor:pointer;
+    background-color: rgba(50,39,33,0.4);
+    /*color:#FFF;*/
+    font-size:2em;
+    /*border-radius:4px;
+    border:1px solid #bbb;*/
+    transition: all 0.3s linear;
+
+}
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+/*----------------------------------------------------------------------------*/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,#F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+.brown{
+    background: #322721; /* Old browsers */
+    background: -moz-linear-gradient(top, #322721 0%, #322721 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#322721), color-stop(100%,#322721)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,#322721 0%,#322721 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #322721 0%,#322721 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,#322721 0%,#322721 100%); /* IE10+ */
+    background: linear-gradient(top, #322721 0%,#322721 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+
+.beige{
+    background: #60C8BD; /* Old browsers */
+    background: -moz-linear-gradient(top, #60C8BD 0%, #1A9588 44%, #60C8BD 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#60C8BD), color-stop(44%, #1A9588), color-stop(100%,#60C8BD)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #60C8BD 0%, #1A9588 44%,#60C8BD 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #60C8BD 0%,#1A9588 44%,#60C8BD 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #60C8BD 0%,#1A9588 44%,#60C8BD 100%); /* IE10+ */
+    background: linear-gradient(top, #60C8BD 0%,#1A9588 44%,#60C8BD 100%); /* W3C */
+}

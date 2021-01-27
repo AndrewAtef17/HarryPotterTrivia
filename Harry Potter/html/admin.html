@@ -1,0 +1,128 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<title>Harry Potter!</title>
+  	<link rel="stylesheet" type="text/css" href="../css/stylehp.css">
+  	<!-- <link rel="stylesheet" href="animate.min.css"> -->
+  </head>
+  <body>
+  	<nav class=" zone sticky">
+  		<ul class="mainnav">
+  			<li><a href="projecthp.html">Home</a></li>
+  			<li><a href="team.html">Team</a></li>
+  			<li><a href="about.html">About us</a></li>
+  			<li class="push"><a href="login.html">Logout</a></li>
+  		</ul>
+  	</nav>
+
+  	<div class="w3-content w3-display-container zone">
+  		<img class="mySlides coverpic" src="../img/is1.jpg" >
+  		<img class="mySlides coverpic" src="../img/is2.jpg" >
+  		<img class="mySlides coverpic" src="../img/is3.jpg" >
+  		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  	</div>
+
+  	<button onclick="myFunction()">Create article</button><button onclick="myFunction2()">Create article 2</button>
+  	<div class="grid zone">
+  		<div class="imagecontainer" id="myDIV">
+          <input type='text' id='text11111'><button id="btn11111" >Change img</button><br> 
+        <input type='text' id='text100000'><button id="btn100000" >Change Link</button>
+        <a id="link11111" ><img class="image"  id="pic11111" ></a>
+  		
+  		</div>
+
+  		<div class="imagecontainer" id="myDIV2">
+                <input type='text' id='text22222'><button id="btn22222" >Change img</button><br> 
+        <input type='text' id='text200000'><button id="btn200000" >Change Link</button>
+        <a id="link22222" ><img class="image" id="pic22222"></a>
+
+  		</div>
+
+
+  		<div class="imagecontainer">
+              <input type='text' id='text1'><button id="btn1" >Change img</button><br> 
+      <input type='text' id='text10'><button id="btn10" >Change Link</button>
+      <a id="link1" href="quiz.html">
+      <img class="image" src="../img/quiz2.jpg" id="pic1"></a>
+
+  	</div>
+  	<div class="imagecontainer">
+          <input type='text' id='text2'><button id="btn2">Change img</button><br> 
+    <input type='text' id='text20'><button id="btn20" >Change Link</button>
+    <a id="link2" href="houses.html">
+    <img class="image" src="../img/houses.jpg" id="pic2"></a>
+
+  </div>
+  <div class="imagecontainer">
+   <input type='text' id='text3'><button id="btn3">Change img</button><br> 
+  <input type='text' id='text30'><button id="btn30" >Change Link</button>
+  <a id="link3" href="charms.html"> 
+  <img  class="image" src="../img/charms.jpg" id="pic3"></a>
+
+</div>
+<div class="imagecontainer">
+  <input type='text' id='text4'><button id="btn4">Change img</button><br> 
+<input type='text' id='text40'><button id="btn40" >Change Link</button>
+<a id="link4" href="characters.html">
+<img class="image" src="../img/characters.jpg" id="pic4"></a>
+
+</div>
+
+
+</div>
+<script type="text/javascript">
+	myFunction();
+	myFunction2();
+
+
+	function myFunction() {
+		var x = document.getElementById("myDIV");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
+
+	function myFunction2() {
+		var x = document.getElementById("myDIV2");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
+
+
+
+
+
+
+	document.getElementById("btn1").onclick = function() {var a= document.getElementById('text1').value;document.getElementById("pic1").src = a;};
+	document.getElementById("btn10").onclick = function(){var a= document.getElementById('text10').value;document.getElementById("link1").href = a;};
+	document.getElementById("btn2").onclick = function() {var a= document.getElementById('text2').value;document.getElementById("pic2").src = a;};
+	document.getElementById("btn20").onclick = function(){var a= document.getElementById('text20').value;document.getElementById("link2").href = a;};
+	document.getElementById("btn3").onclick = function() {var a= document.getElementById('text3').value;document.getElementById("pic3").src = a;};
+	document.getElementById("btn30").onclick = function(){var a= document.getElementById('text30').value;document.getElementById("link3").href = a;};
+	document.getElementById("btn4").onclick = function() {var a= document.getElementById('text4').value;document.getElementById("pic4").src = a;};
+	document.getElementById("btn40").onclick = function(){var a= document.getElementById('text40').value;document.getElementById("link4").href = a;};
+
+
+
+
+      // Create ARTICLES
+      document.getElementById("btn11111").onclick = function() {var a= document.getElementById('text11111').value;document.getElementById("pic11111").src = a;};
+      document.getElementById("btn100000").onclick = function(){var a= document.getElementById('text100000').value;document.getElementById("link11111").href = a;};
+
+
+      document.getElementById("btn22222").onclick = function() {var a= document.getElementById('text22222').value;document.getElementById("pic22222").src = a;};
+      document.getElementById("btn200000").onclick = function(){var a= document.getElementById('text200000').value;document.getElementById("link22222").href = a;};
+
+
+
+  </script>
+  <script type="text/javascript" src="C:\Users\Andrew\Desktop\final project hp\js\imageslider.js"> </script>   <!-- Image slider script -->
+</body>
+</html>
+  <!-- onclick="changepic(document.getElementById('text').value)" -->

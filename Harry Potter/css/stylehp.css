@@ -1,0 +1,264 @@
+/*my styling*/
+/*nav*/
+body{
+    margin:auto 0;
+}
+nav{
+    background-color: rgba(50,39,33,0.2);
+}
+ul{
+    margin:5px;
+    display: flex;
+    list-style: none;
+    font-size: 0.6em;
+
+}
+li{
+    margin: 0px;
+    top: 0;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.push{
+    margin-left: auto;
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+/****************************************************************/
+
+/*cover*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+
+}
+.coverpic{
+    width:100%;
+    height:100%;
+}
+.try{
+    position: center;
+}
+
+
+/*buttons and sliderbar*/
+  .w3-content{margin-left:auto;margin-right:auto}
+  .w3-display-container:hover span
+  .w3-button{
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;user-select:none} 
+  .w3-button{
+  border:none;/*display:inline-block;*/
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap}
+   .w3-button:first-child,.w3-dropdown-click:hover >
+   .w3-button:first-child{background-color:#ccc;color:#000}
+   .w3-button{width:2%;text-align:left;padding:8px 16px}
+   .w3-button{white-space:normal}
+   .w3-button:hover{color:#000!important;background-color:#ccc!important}
+   .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important} /*this works*/
+   .w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+   .w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+/*******************************************************************/
+
+/*Grid*/
+.grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill,minmax(600px,1fr));
+}
+
+.box>img{
+    width:100%;
+    height:100%;
+}
+.box{
+    background-color: rgba(27,27,27, 0.4);
+    padding: 5px;
+    margin: 5px;
+}
+* {box-sizing: border-box}
+.imagecontainer {
+  position: relative;
+  width: 100%;
+ 
+}
+
+/* Make the image to responsive */
+.image {
+  /*display: block;*/
+  width: 100%;
+  height: 100%;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.imagecontainer:hover .overlay {
+  opacity: 1;
+}
+
+
+/****************************************************************/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* .flip-card {
+ /* background-color: transparent;*/
+/*  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;*/
+ /* perspective: 1000px;*/ /* Remove this if you don't want the 3D effect 
+} */
+
+/* This container is needed to position the front and back side */
+
+
+
+
+/********************************************************************/
+.zone {
+    /*padding:30px 50px;
+    margin:40px 60px;
+    display:inline-block;*/
+    cursor:pointer;
+    background-color: black;
+    /*color:#FFF;*/
+    font-size:2em;
+    /*border-radius:4px;
+    border:1px solid #bbb;*/
+    transition: all 0.3s linear;
+
+}
+
+.zonex {
+    /*padding:30px 50px;
+    margin:40px 60px;
+    display:inline-block;*/
+    cursor:pointer;
+    background-color: rgba(50,39,33,0.4);
+    /*color:#FFF;*/
+    font-size:1.3em;
+    /*border-radius:4px;
+    border:1px solid #bbb;*/
+    transition: all 0.3s linear;
+
+}
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+.zonex:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,#F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+.brown{
+    background: #322721; /* Old browsers */
+    background: -moz-linear-gradient(top, #322721 0%, #322721 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#322721), color-stop(100%,#322721)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,#322721 0%,#322721 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #322721 0%,#322721 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,#322721 0%,#322721 100%); /* IE10+ */
+    background: linear-gradient(top, #322721 0%,#322721 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+
+.beige{
+    background: #60C8BD; /* Old browsers */
+    background: -moz-linear-gradient(top, #60C8BD 0%, #1A9588 44%, #60C8BD 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#60C8BD), color-stop(44%, #1A9588), color-stop(100%,#60C8BD)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #60C8BD 0%, #1A9588 44%,#60C8BD 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #60C8BD 0%,#1A9588 44%,#60C8BD 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #60C8BD 0%,#1A9588 44%,#60C8BD 100%); /* IE10+ */
+    background: linear-gradient(top, #60C8BD 0%,#1A9588 44%,#60C8BD 100%); /* W3C */
+}

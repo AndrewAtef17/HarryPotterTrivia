@@ -1,0 +1,83 @@
+body{
+    margin:auto 0;
+}
+nav{
+    background-color: rgba(50,39,33,0.9);
+}
+ul{
+    margin:5px;
+    display: flex;
+    list-style: none;
+    font-size: 0.6em;
+
+}
+li{
+    margin: 0px;
+    top: 0;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.push{
+    margin-left: auto;
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+
+.zone {
+    cursor:pointer;
+    background-color: rgba(50,39,33,0.4);
+    font-size:2em;
+    transition: all 0.3s linear;
+
+}
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.zone2:hover {  
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+.zone2 {
+    cursor:pointer;
+    background-color: white;
+    font-size:2em;
+    transition: all 0.3s linear;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(600px,2fr));
+    grid-gap: 0px;
+   
+}
+img{
+    width: 100%;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.brown{
+    background: #322721; /* Old browsers */
+    background: -moz-linear-gradient(top, #322721 0%, #322721 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#322721), color-stop(100%,#322721)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,#322721 0%,#322721 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #322721 0%,#322721 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,#322721 0%,#322721 100%); /* IE10+ */
+    background: linear-gradient(top, #322721 0%,#322721 100%); /* W3C */
+}
